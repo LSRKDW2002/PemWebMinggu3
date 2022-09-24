@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Multimedia - HTML 5</title>
+    </head>
+    <body>
+        <h2>Multimedia Files - HTML 5</h2>
+        <p>Dibuat Oleh LAUSER KUMALA DEWA</p>
+        <p>A11.2022.14363 FIK UDINUS</p>
+        <p>
+            <button onclick="playVID()" type="button">Play Video</button>
+            <button onclick="pauseVID()" type="button">Pause Video</button>
+            <button onclick="controlsPlayVid()" type="button">Controls ON</button>
+            <button onclick="controlsStopVid()" type="button">Controls OFF</button>
+            <button onclick="cekDurasi()" type="button">Video Duration</button>
+        </p>
+        <video width="480" height="360" controls>
+            <source src="evoreels.mp4" type="video/mp4">
+            Your File not support...
+        </video><br>
+        <p>Cycling and Hiking GTA V Online Indonesia</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/tWYH80HKe-0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
+        <p>Cinematic Carmeet Video</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Dz7oe_HGZMs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p><b><i>JANGAN LUPA MAMPIR DAN SUBSCRIBE CHANNEL SAYA ==> <a href="https://www.youtube.com/c/TheAXELORD"> www.youtube.com/c/TheAXELORD</a></i></b></p>
+    </body>
+    <script>
+    var vid = document.getElementById(myVideo);
+
+    function cekDurasi() {
+        alert(vid.duration);
+    }
+    function playVid() {
+        vid.loop = true;
+        vid.play();
+    }
+    function pauseVid() {
+        vid.pause();
+    }
+    function ControlEnable(){
+        vid.controls = true;
+        vid.load();
+    }
+    function ControlDisable(){
+        vid.controls = false;
+        vid.load();
+    }
+    </script>
+</html>
